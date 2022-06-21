@@ -1,4 +1,4 @@
-**VAE VICITS**
+# **VAE VICITS**
 
 Vae Victis es una popular expresión de la antigua Roma, que se traduce como ¡Ay de los caídos! y en estas que nos encontramos, una Roma castigada por las batallas y que trata de defenderse de los ataques enemigos, mientras vive sus propias batallas políticas internas.
 Cada partida comienza, con el reparto de dos cartas de objetivo (una es victoria militar en 2 guerras y otra una configuración del senado) a los jugadores, cartas que representan la victoria en el juego. El jugador que durante su turno, cumpla el objetivo de ambas cartas, ganará la partida.<br><br>
@@ -24,8 +24,14 @@ Desarrolladores del proyecto : <br>
   - Pedro Parrilla Bascón (pedparbas1)<br>
   - Luis Rodríguez Vidosa (luirodvid)<br>
   - Álvaro Vázquez Ortiz (alvvazort)<br>
+## Imágenes del juego
 
+![Inicio](https://github.com/alvvazort/Vae-Victis/blob/main/docs/Images/Inicio.jpg)
+![Inicio con barra de amigos](https://github.com/alvvazort/Vae-Victis/blob/main/docs/Images/Inicio%20amigos.jpg)
+![Lobby](https://github.com/alvvazort/Vae-Victis/blob/main/docs/Images/Lobby%20menu%20amigos.jpg)
+![Tablero](https://github.com/alvvazort/Vae-Victis/blob/main/docs/Images/Tablero.jpg)
+![Tablero con dados](https://github.com/alvvazort/Vae-Victis/blob/main/docs/Images/Tablero%20dados.jpg)
 
 Para finalizar adjuntamos un video creado por los desarrolladores del juego donde se explica como jugar y las normas del juego. 
-# Video en Youtube explicando el juego:
+## Video en Youtube explicando el juego:
 https://www.youtube.com/watch?v=JjP72nfBmMs
