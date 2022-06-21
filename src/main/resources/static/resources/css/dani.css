@@ -1,0 +1,527 @@
+.row {
+    display: flex;
+}
+.col {
+    flex: 1;
+}
+.menu {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+}
+.menu .col {
+    padding: 20px;
+}
+.menuLinks {
+    margin-bottom: 20px;
+}
+.menu > .container .menuLinks a {
+    padding: 18px;
+    font-size: 25px;
+}
+.menuLinks a {
+    background-image: url(/resources/images/marco.png);
+    display: block;
+    text-align: center;
+    padding: 42px;
+    background-size: 100% 100%;
+    font-size: 30px;
+    color: #000;
+    max-width: 380px;
+    color: white;
+    font-size: 35px;
+    font-family: LithosPro;
+    text-shadow: 1px 1px 0px black, 1px -1px 0px black, -1px -1px 0px black, -1px 1px 0px black;
+    margin: auto;
+}
+.menu > .container {
+    background: url(/resources/images/menubg.png);
+    background-size: 100% 100%;
+    max-width: 1050px;
+    width: 100%;
+    padding: 210px 125px;
+    position: relative;
+    margin: auto;
+}
+.numberList {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.numberList .number {
+    padding: 10px;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 5px;
+    color: #fff;
+    background: #000;
+    border-radius: 50%;
+    border: 2px solid #000;
+    display: block;
+}
+.gif {
+    background: none;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 100%;
+}
+.menu > .container .inner {
+    position: relative;
+}
+#gameOptions {
+    background: #3a2831;
+    border-radius: 4px;
+    border: inset 4px black;
+    color: #fff;
+}
+.gameMessage p {
+    color: #fff;
+}
+.gameMessage small {
+    font-size: 20px;
+}
+.winnerMessage p {
+    color: #fff;
+}
+.winnerMessage small {
+    font-size: 20px;
+}
+.inputGroup > div {
+    margin-bottom: 8px
+}
+.inputGroup label {
+    display: block;
+}
+.inputGroup select {
+    width: 100%;
+    color: #000;
+    padding: 4px;
+}
+.noFill {
+    flex: initial;
+}
+#playersConnected {
+
+}
+.numberList li {
+    padding: 0 30px;
+}
+.numberList li > .row {
+    align-items: center;
+}
+#lobbyBoard {
+    margin-bottom: 30px;
+}
+#lobbyBoard > div > * {
+    background: #7070809e;
+    border-radius: 6px;
+    border: 2px solid #110c64;
+    height: 100%;
+}
+#lobbyBoard > .col.noFill {
+    height: initial;
+    display: flex;
+    flex-direction: column;
+}
+#lobbyBoard > .col.noFill > * {
+    flex: 1;
+    height: initial;
+}
+#lobbyBoard > .col.noFill .infoMatchmaking {
+    padding: 10px;
+    flex: initial;
+}
+/*
+ * Dice
+ */
+.diceHolder {
+    position: relative;
+    width: calc(100% / 3);
+    float: left;
+    height: 100px;
+}
+#cube .front {
+	transform: translateZ(100px);
+}
+
+#cube .back {
+	transform: rotateX(-180deg) translateZ(100px);
+}
+
+#cube .right {
+	transform: rotateY(90deg) translateZ(100px);
+}
+
+#cube .left {
+	transform: rotateY(-90deg) translateZ(100px);
+}
+
+#cube .top {
+	transform: rotateX(90deg) translateZ(100px);
+}
+
+#cube .bottom {
+	transform: rotateX(-90deg) translateZ(100px);
+}
+
+#cube .container {
+	width: 200px;
+	height: 200px;
+	position: relative;
+	margin: 0 auto 40px;
+	border: 1px solid #FFF;
+	perspective: 1000px;
+	perspective-origin: 50% 100%;
+}
+
+#cube {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+	transition: transform 3s;
+}
+
+#cube:hover {
+	cursor: pointer;
+}
+
+#cube div {
+	background: hsla(0, 85%, 50%, 0.8);
+	display: block;
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	border: 2px solid #ab1a1a;
+	margin: 0 auto;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 500%;
+	text-align: center;
+	padding: 50px 0;
+}
+
+.dot {
+	display: block;
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background: #fff;
+	border-radius: 15px;
+}
+
+.front .dot1 {
+	top: 85px;
+	left: 85px;
+}
+
+.back .dot1 {
+	top: 45px;
+	left: 45px;
+}
+
+.back .dot2 {
+	top: 125px;
+	left: 125px;
+}
+
+.right .dot1 {
+	top: 45px;
+	left: 45px;
+}
+
+.right .dot2 {
+	top: 85px;
+	left: 85px;
+}
+
+.right .dot3 {
+	top: 125px;
+	left: 125px;
+}
+
+.left .dot1 {
+	top: 45px;
+	left: 45px;
+}
+
+.left .dot2 {
+	top: 45px;
+	left: 125px;
+}
+
+.left .dot3 {
+	top: 125px;
+	left: 45px;
+}
+
+.left .dot4 {
+	top: 125px;
+	left: 125px;
+}
+
+.top .dot1 {
+	top: 45px;
+	left: 45px;
+}
+
+.top .dot2 {
+	top: 45px;
+	left: 125px;
+}
+
+.top .dot3 {
+	top: 85px;
+	left: 85px;
+}
+
+.top .dot4 {
+	top: 125px;
+	left: 45px;
+}
+
+.top .dot5 {
+	top: 125px;
+	left: 125px;
+}
+
+.bottom .dot1 {
+	top: 45px;
+	left: 45px;
+}
+
+.bottom .dot2 {
+	top: 45px;
+	left: 85px;
+}
+
+.bottom .dot3 {
+	top: 45px;
+	left: 125px;
+}
+
+.bottom .dot4 {
+	top: 125px;
+	left: 45px;
+}
+
+.bottom .dot5 {
+	top: 125px;
+	left: 85px;
+}
+
+.bottom .dot6 {
+	top: 125px;
+	left: 125px;
+}
+
+/*
+ * WarBoard
+ */
+body {
+    margin: 0;
+}
+.gameLayout {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+.gameLayout > .leftSide {
+    width: 150px;
+    height: 100%;
+    align-items: center;
+}
+.gameLayout > .leftSide > .boardThumbnails {
+    margin: auto;
+}
+.gameLayout > .leftSide .gameBoard {
+    height: 100px;
+    width: 100px;
+    margin: 10px 0;
+}
+.gameLayout > .leftSide .gameBoard.war {
+    background: black;
+}
+.gameLayout > .content {
+    flex: 1;
+    height: 100%;
+}
+.gameLayout > .content > .bottomSide {
+    height: 150px;
+    display: block;
+}
+.gameLayout > .content > .bottomSide > .user {
+    flex: 1;
+}
+.gameLayout > .content > .bottomSide > .diceContainer {
+    position: relative;
+    width: 200px;
+}
+.gameLayout > .content > .bottomSide > .diceContainer > .dice {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.gameLayout > .content > .topSide {
+    height: 100px;
+    display: flex;
+}
+.gameLayout > .content > .topSide > .player {
+    flex: 1;
+    margin: 10px;
+    background: #00000038;
+    border: 1px solid #000;
+    padding: 10px;
+}
+.gameLayout > .content > .board {
+    position: relative;
+    max-height: 600px;
+    padding: 0px;
+}
+.gameLayout > .content > .board canvas {
+    height: 100%;
+}
+.gameLayout > .content > .board > canvas {
+    position: absolute;
+}
+.gameLayout .boardBg {
+    width: 100%;
+    height: 100%;
+}
+.gameLayout .boardBg > .boardHolder {
+    position: relative;
+    margin: auto;
+    height: 600px;
+    width: fit-content;
+
+}
+.gameLayout .boardBg img {
+    height: 100%;
+    width: auto;
+    display: table;
+    margin: auto;
+}
+.gameLayout .boardHolder > .boardInterface {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.gameLayout .boardHolder > .boardInterface > div {
+    position: absolute;
+    width: 100%;
+    height: 39%;
+    display: flex;
+}
+.gameLayout .boardInterface > .upper {
+    top: 0;
+    left: 0;
+}
+.gameLayout .boardInterface > .lower {
+    bottom: 0;
+    left: 0;
+}
+.gameLayout .boardHolder > .boardInterface > div > div {
+    flex: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.gameLayout .boardHolder > .boardInterface > div > div.actioned {
+    background: #00000065;
+}
+.gameLayout .boardHolder > .boardInterface > div > div > span {
+    text-align: center;
+    color: #fff;
+    font-size: 32px;
+    width: 100%;
+    display: block;
+}
+.popupMessage {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 999;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+}
+.popupMessage > .content {
+    background-image: url(/resources/images/marcoAltoConFondo.png);
+    display: block;
+    text-align: center;
+    padding: 42px;
+    background-size: 100% 100%;
+    font-size: 30px;
+    color: #000;
+    max-width: 500px;
+    color: white;
+    font-size: 35px;
+    font-family: LithosPro;
+    text-shadow: 1px 1px 0px rgb(176, 165, 165), 1px -1px 0px black, -1px -1px 0px black, -1px 1px 0px black;
+    margin: auto;
+}
+.popupMessage.threeDices > .content {
+    width: 600px;
+    height: 275px;
+    transition: all 0.3s;
+}
+.popupMessage.threeDices .dice {
+    width: 200px;
+    height: 200px;
+}
+.popupMessage.threeDices button {
+    margin-top: 20px;
+}
+.popupMessage.threeDices.miniDice {
+    right: 0;
+    width: initial;
+}
+.popupMessage.threeDices.miniDice > .content {
+    height: 380px;
+    width: 175px;
+}
+.popupMessage.threeDices.miniDice .diceHolder {
+    float: initial;
+}
+.popupMensaje > .content > .ButtonRemove {
+    font-size: 16px;
+    width: fit-content;
+    margin: 0;
+}
+.RemoveDice img {
+    display: none;
+}
+.removed > .RemoveDice img {
+    display: block;
+}
+.actionButtons {
+    position: absolute;
+    left: 100%;
+    align-items: center;
+}
+.actionButtons > .button {
+    padding: 60px 10px;
+}
+.warElection .diceHolder .points {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: #ff00006e;
+    width: 124px;
+    left: 30px;
+    top: 21px;
+    height: 124px;
+}
+.warElection .diceHolder .points > span {
+    flex: 1;
+}

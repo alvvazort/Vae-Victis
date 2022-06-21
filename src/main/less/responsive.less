@@ -1,0 +1,106 @@
+#horizontal{
+  display: none;
+}
+/* Responsive Pantallas grandes*/
+
+@media (min-width: 1200px) {
+  #background{
+      background-size: 1200px;
+  }
+}
+
+@media (max-width: 1000px) {    /*Para tablet*/
+  #tituloYgrupo{
+      font-size: 10px;  
+  }
+  #miembro{
+      font-size: 5px;
+  }
+  .marco{
+      font-size: 200%;
+  }
+}
+
+@media (max-width: 500px) {          /*Para movil*/
+  #background{
+      background-image: url('/resources/images/backgroundMovil.jpg'); 
+  }
+}
+
+@media only screen and (orientation:portrait){      /* Modo Horizontal */
+  #horizontal{
+      display: flex;
+      background-image: url('/resources/images/ModoHorizontal.jpg');
+      width: 100vw;
+      height: 100vh;
+  }
+  .marco{
+      display: none;
+  }
+  #todo{
+      display: none;
+  }
+}
+
+     
+                                            /* LOGIN.JSP */
+@media (max-width: 1024px) {    /*Para portatil S*/
+    form .marco{
+        height: 130px;
+        background-size: 50%;
+    }
+}
+
+@media (max-width: 800px) {    /*Para movil/tablet horizontal*/
+    form .marco{
+        background-size: 40%;
+        height: 80px;
+    }
+    .marco input{
+        height: 160px;
+        font-size: 100%;
+        background-size: 50%;
+    }
+}
+
+@media only screen and (orientation:portrait){      /* Modo Horizontal */
+    #horizontal{
+        display: flex;
+        background-image: url('/resources/images/ModoHorizontal.jpg');
+        width: 100vw;
+        height: 100vh;
+    }
+    #todo{
+        display: none;
+    }
+}
+@media (max-width: 1024px) {    /*Para portatil S*/
+  form .marco{
+      height: 130px;
+      background-size: 50%;
+  }
+}
+
+@media (max-width: 800px) {    /*Para movil/tablet horizontal*/
+  form .marco{
+      background-size: 40%;
+      height: 80px;
+  }
+  .marco input{
+      height: 160px;
+      font-size: 100%;
+      background-size: 50%;
+  }
+}
+
+@media only screen and (orientation:portrait){      /* Modo Horizontal */
+  #horizontal{
+      display: flex;
+      background-image: url('/resources/images/ModoHorizontal.jpg');
+      width: 100vw;
+      height: 100vh;
+  }
+  #todo{
+      display: none;
+  }
+}

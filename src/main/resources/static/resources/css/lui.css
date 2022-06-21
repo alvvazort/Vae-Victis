@@ -1,0 +1,68 @@
+.botonSocial{
+    background: url(/resources/images/LogoEspartano2.png);
+    top:10px;
+    right:10px;
+    padding: 60px 60px;
+    position: fixed;
+    background-size: 90% 90%;
+    text-decoration: none;
+    border: none;
+    outline:none;
+    background-repeat: no-repeat; 
+
+
+}
+
+.campoForm {
+    background-color:initial;
+    border-color: transparent;
+    color:black;
+    border: none;
+    outline:none;
+    width: 100%;
+}
+.campoForm::placeholder {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.cardsmenu {
+    position:fixed;
+    z-index: 1;
+    padding: 1rem;
+    bottom: -100%;
+    height: 250px;
+    width: 150vh;
+    transition: all 0.5s;
+    background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(43, 43, 43, 0.01));
+    backdrop-filter: blur(3px);
+    border-radius: 20px 0 0 20px;
+    color: #fff;
+}
+.cardsmenu.opened {
+    bottom: 0;
+}
+
+.card{
+    margin:0;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    height: 160px;
+    width: 120px;
+    margin-left: 10px;
+    cursor:pointer;
+}
+.card:hover:after {
+    position: absolute;
+    content: attr(cardtext);
+    display: inline-block;
+    bottom: 10px;
+    right: center;
+    padding: 5px;
+    background-color: white;
+    color: black;
+}
+.close-cards{
+    margin:0 auto;
+    display: block;
+}

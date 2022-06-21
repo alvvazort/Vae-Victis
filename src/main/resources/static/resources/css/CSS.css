@@ -1,0 +1,1115 @@
+@font-face {
+    font-family: LithosPro;
+    src: url(/resources/fonts/LithosPro-Regular.otf);  
+    }
+
+                                            /* WELCOME.JSP */
+
+#background{
+    background-color:#6E0001; 
+    background-image: url('/resources/images/background.jpg'); 
+    background-size: 100%; 
+    background-repeat: no-repeat; 
+    background-position: bottom; 
+    background-attachment: fixed;
+}
+
+a:hover{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+}
+
+.grupo {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    background-position: center; 
+    justify-content:center;
+}
+
+.grupito {
+    position: static;
+    width: 100%;
+}
+
+.marco{
+    display: flex;
+    background-image: url('/resources/images/marco.png'); 
+    background-size: 50%;
+    background-repeat: no-repeat;
+    text-align: center;
+    align-items: center;
+    background-position: center; 
+    justify-content:center;
+    height: 200px;
+    color: black;
+    font-family: "Lithos Pro Regular";
+    font-size: 250%;
+    text-shadow: 1px 1px 0px white, 1px -1px 0px white, -1px -1px 0px white, -1px 1px 0px white;
+}
+form .marco{
+    height: 180px;
+}
+
+a div.marco:hover{
+    color: #6E0001;
+}
+
+#tituloYgrupo{
+    color: white;
+    font-family: LithosPro;
+    margin-right: 10px;
+    text-shadow: 1px 1px 0px black, 1px -1px 0px black, -1px -1px 0px black, -1px 1px 0px black;  
+
+}
+
+#miembros{
+    text-align: right;
+}
+
+#miembro{
+    color: white;
+    font-size: 10px;
+    margin-right: 10px;
+    font-family: LithosPro;
+    text-shadow: 1px 1px 0px black, 1px -1px 0px black, -1px -1px 0px black, -1px 1px 0px black;  
+}
+
+/* Responsive Pantallas grandes*/
+
+@media (min-width: 1200px) {
+    #background{
+        background-size: 1200px;
+    }
+}
+
+/* sideMenu css*/
+
+
+.friendLinkSocialBar{
+    color: #23ADD8;
+}
+.friendLinkSocialBar:hover{
+    color: #23ADD8;
+}
+
+.head-line {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.txt {
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+    transition: ease-out;
+    transition-duration: 0.3s;
+}
+
+.sideMenu {
+    position:fixed;
+    z-index: 1;
+    padding: 1rem;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 500px;
+    transition: all 0.5s;
+    background: linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(43, 43, 43, 0.01));
+    backdrop-filter: blur(3px);
+    border-radius: 20px 0 0 20px;
+    color: #fff;
+}
+
+.invitaciones {
+    position: fixed;
+    width: max-content;
+    justify-content: center;
+    bottom: 50%;
+}
+
+.sideMenu.opened {
+    right: 0;
+}
+
+.side-menu-btn {
+    padding: 0 5%;
+    border-width: 50px;
+    border-color: #000000;
+    cursor: pointer;
+}
+
+.side-menu-btn:hover {
+    color:#252d30;
+    transition: 0.3s;
+}
+
+#desplegable {
+    transition: ease-out;
+    transition-duration: 2s;
+}
+
+.sideTable {
+    background-color: #00000067;
+    backdrop-filter: blur(3px);
+}
+
+.btn-edited {
+    border-radius: 15px;
+    border-color: black;
+    justify-content: left;
+    transition: border 0.15s;
+}
+
+.btn-edited:hover {
+    border-color: red;
+}
+
+.btn-edited-accept:hover {
+    border-color: green;
+}
+
+.btn-edited-find:hover {
+    border-color: white;
+}
+
+#friendsTable > tbody > tr > td:last-child, #friendsTable > thead > tr > th:last-child {
+    display: none;
+}
+.lobbyRoom #friendsTable > thead > tr > th:last-child, .lobbyRoom #friendsTable > tbody > tr > td:last-child {
+    display: block;
+}
+
+/*fin sideMenu css*/
+
+@media (max-width: 1000px) {    /*Para tablet*/
+    #tituloYgrupo{
+        font-size: 10px;  
+    }
+    #miembro{
+        font-size: 5px;
+    }
+    .marco{
+        font-size: 200%;
+    }
+}
+
+@media (max-width: 500px) {          /*Para movil*/
+    #background{
+        background-image: url('/resources/images/backgroundMovil.jpg'); 
+    }
+}
+
+#horizontal{
+    display: none;
+}
+@media only screen and (orientation:portrait){      /* Modo Horizontal */
+    #horizontal{
+        display: flex;
+        background-image: url('/resources/images/ModoHorizontal.jpg');
+        width: 100vw;
+        height: 100vh;
+    }
+    .marco{
+        display: none;
+    }
+    #todo{
+        display: none;
+    }
+}
+     
+                                            /* LOGIN.JSP */
+                                            
+
+form .marco{
+    height: 160px;
+    background-size: 35%;
+}
+
+.marco input{
+    width: 40vw;
+    height: 100px;
+    font-size: 150%;
+    background-color: transparent;
+    border: 0px;
+    font-family: LithosPro;   
+    box-shadow: none;
+    padding-left: 5%;
+    color: #6E0001;
+}
+
+.marco input:focus{
+    box-shadow: none;
+}
+
+.marco input::placeholder{
+    color: #6E0001;
+}
+.buttonlog{
+    font-family: "Lithos Pro Regular";
+    background-color: #6E0001;
+    opacity: .8;
+    border: 2px black;
+    color:white;
+    width: 25%;
+    border: 1px solid white ;
+
+}
+.buttonlog:hover{
+    color: white;
+}
+
+#registrate{
+    color: black;
+    text-shadow: 1px 1px 0px white, 1px -1px 0px white, -1px -1px 0px white, -1px 1px 0px white;
+    font-family: "Lithos Pro Regular";
+}
+
+@media (max-width: 1024px) {    /*Para portatil S*/
+    form .marco{
+        height: 130px;
+        background-size: 50%;
+    }
+}
+
+@media (max-width: 800px) {    /*Para movil/tablet horizontal*/
+    form .marco{
+        background-size: 40%;
+        height: 80px;
+    }
+    .marco input{
+        height: 160px;
+        font-size: 100%;
+        background-size: 50%;
+    }
+}
+
+@media only screen and (orientation:portrait){      /* Modo Horizontal */
+    #horizontal{
+        display: flex;
+        background-image: url('/resources/images/ModoHorizontal.jpg');
+        width: 100vw;
+        height: 100vh;
+    }
+    #todo{
+        display: none;
+    }
+}
+
+/* WarBoard*/
+
+.botonesTableros{
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+}
+
+#canvas{
+    margin-left: 100px;
+    height: 80vh;
+}
+
+#divBotonesTableros{
+    margin-top: -50px;
+    margin-left: 30px;
+}
+
+@media (max-width: 1024px){
+    #canvas{
+        margin-left: 100px;
+    }
+    #botonesTableros{
+        width: 150px;
+        height: 150px;
+    }
+    #divBotonesTableros{
+        margin-top: 5vh;
+        margin-left: 0px;
+    }
+}
+
+
+@media (max-width: 800px) {    /*Para movil/tablet horizontal*/
+    #canvas{
+        margin-left: 0px;
+    }
+    #botonesTableros{
+        width: 100px;
+        height: 100px;
+    }
+    #divBotonesTableros{
+        margin-left: 0px;
+    }
+}
+/* DICE */
+
+.diceContainerWar {
+    width: 100px;
+}
+.diceWar {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    
+}
+
+#cubeWar .frontWar {
+	transform: translateZ(50px);
+}
+
+#cubeWar .backWar {
+	transform: rotateX(-180deg) translateZ(50px);
+}
+
+#cubeWar .rightWar {
+	transform: rotateY(90deg) translateZ(50px);
+}
+
+#cubeWar .leftWar {
+	transform: rotateY(-90deg) translateZ(50px);
+}
+
+#cubeWar .topWar {
+	transform: rotateX(90deg) translateZ(50px);
+}
+
+#cubeWar .bottomWar {
+	transform: rotateX(-90deg) translateZ(50px);
+}
+
+#cubeWar .container {
+	width: 100px;
+	height: 100px;
+	position: relative;
+	border: 1px solid #FFF;
+	perspective: 500px;
+	perspective-origin: 25% 50%;
+}
+
+#cubeWar {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+	transition: transform 3s;
+    transform: rotateY(10deg) rotateX(10deg) translateZ(10px);
+}
+
+#cubeWar:hover {
+	cursor: pointer;
+}
+
+#cubeWar div {
+	background: rgba(138, 10, 10, 0.9);
+	display: block;
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	border: 2px solid white;
+}
+
+.dotWar {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+    left: 0;
+}
+
+.frontWar .zorro {
+	background-image: url('/resources/images/carasDado/caraZorro.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.backWar .gallo {
+	background-image: url('/resources/images/carasDado/caraGallo.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.rightWar .ciervo {
+	background-image: url('/resources/images/carasDado/caraCiervo.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.leftWar .lobo {
+	background-image: url('/resources/images/carasDado/caraLobo.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.topWar .rata {
+	background-image: url('/resources/images/carasDado/caraRata.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.bottomWar .oro {
+	background-image: url('/resources/images/carasDado/caraOro.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.RemoveDice{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;    
+    border: none;
+    outline:none;
+    text-decoration: none;
+}
+
+.removeDices > .content {
+    width: 600px;
+    height: 200px;
+}
+.removeDices .RemoveDice {
+    width: 125px;
+    height: 125px;
+    background-size: 120%;
+    background-clip: border-box;
+}
+
+.Red{
+    background-color: #AB3237;
+}
+.Green{
+    background-color: #00A43F;
+}
+.Blue{
+    background-color: #23ADD8;
+}
+.Yellow{
+    background-color: #ccd823;
+}
+.curiaRed{
+    border: 10px solid #AB3237;
+    width: 50px;
+    height: 50px;
+}
+.curiaGreen{
+    border: 10px solid #00A43F;
+    width: 50px;
+    height: 50px;
+}
+.curiaBlue{
+    border: 10px solid #23ADD8;
+    width: 50px;
+    height: 50px;
+}
+.cityTokenRed{
+    border: 10px solid #AB3237;
+    width: 50px;
+    height: 50px;
+}
+.cityTokenGreen{
+    border: 10px solid #00A43F;
+    width: 50px;
+    height: 50px;
+}
+.cityTokenYellow{
+    border: 10px solid #ccd823;
+    width: 50px;
+    height: 50px;
+}
+
+.tachado{
+    background-image: url('/resources/images/tachado.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: none;
+    z-index: 99;
+    height: 115px;
+    width: 115px;
+    margin: 10px;
+    border: none;
+    outline:none;
+    text-decoration: none;
+}
+
+.popupMensaje {
+    position: fixed;
+    height: 100%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    right: -100px;
+}
+.popupMensaje > .content {
+    background-image: url(/resources/images/marcoAltoConFondo.png);
+    display: flex;
+    transform: rotate(90deg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    align-items: center;
+    background-position: center; 
+    justify-content:center;
+    width: 500px;
+    color: white;
+    font-size: 35px;
+    font-family: LithosPro;
+    text-shadow: 1px 1px 0px rgb(176, 165, 165), 1px -1px 0px black, -1px -1px 0px black, -1px 1px 0px black;
+    right: 0px;
+    
+}
+
+.curiaChoose > .content{
+    width: 600px;
+    height: 220px; 
+}
+
+.cityCardChoose > .content{
+    width: 600px;
+    height: 220px; 
+}
+
+.grupoImages{
+
+    margin-left: 30px;
+    display:inline-block;
+}
+
+.curiaChoose img{
+    transform: rotate(-90deg);
+    height: 50px; 
+}
+.cityCardChoose img{
+    transform: rotate(-90deg);
+    height: 50px; 
+}
+
+
+.popupMensaje > .content > .diceHolder{
+    transform: rotate(-90deg);
+    float: initial;
+}
+
+.popupMensaje > .content > .curiaHolder{
+    float: initial;
+    position: relative;
+    float: left;
+    padding-top: 20px;
+}
+
+.popupMensaje > .content > .cityTokenHolder{
+    float: initial;
+    position: relative;
+    float: left;
+    padding-top: 20px;
+}
+
+
+.popupMensaje > .content > .ButtonRemove{
+    transform: rotate(-90deg);
+}
+
+.ButtonRemove{
+    background-color: #a30003;
+    width: 175px;
+    font-size: 30px;
+    border-width: 3px;
+    border-color: #fff;
+}
+.ButtonCuria{
+    transform: rotate(-90deg);
+    background-color: #a30003;
+    width: 175px;
+    font-size: 30px;
+    border-width: 3px;
+    border-color: #fff;
+    margin-top: 10px!important;
+}
+.ButtonCard5{
+    transform: rotate(-90deg);
+    background-color: #a30003;
+    width: 175px;
+    font-size: 30px;
+    border-width: 3px;
+    border-color: #fff;
+    margin-top: 10px!important;
+}
+
+/* ESTADISTICAS.JSP */
+
+.titulo{
+    color: rgb(0, 0, 0);
+    font-size: 55px;
+    font-family: LithosPro;
+    text-shadow: 2px 2px 0px rgb(176, 165, 165), 1px -1px 0px rgb(255, 255, 255), -1px -1px 0px rgb(255, 255, 255), -1px 1px 0px rgb(255, 255, 255);
+    top: 0px;
+}
+
+.menu > .container2 {
+    background: url(/resources/images/menubg.png);
+    background-size: 100% 100%;
+    max-width: 1050px;
+    width: 100%;
+    padding: 100px 120px;
+    position: relative;
+    margin: auto;
+}
+
+.global{
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    font-family: LithosPro;
+    text-shadow: 2px 2px 0px rgb(176, 165, 165), 1px -1px 0px rgb(255, 255, 255), -1px -1px 0px rgb(255, 255, 255), -1px 1px 0px rgb(255, 255, 255);
+    top: 0px;
+    margin-left: 10vw;
+}
+
+ul{
+list-style-type: none;
+}
+
+.global{
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    font-family: LithosPro;
+    text-shadow: 2px 2px 0px rgb(176, 165, 165), 1px -1px 0px rgb(255, 255, 255), -1px -1px 0px rgb(255, 255, 255), -1px 1px 0px rgb(255, 255, 255);
+    top: 0px;
+    margin-left: 10vw;
+}
+
+.textoEstadisticas{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    margin-left: 60px;
+    font-family: LithosPro;
+}
+
+.cantidadEstadisticas{
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    left: 52vw;   
+    font-family: LithosPro;
+}
+
+.aclaraciones{
+    font-family: LithosPro;
+    position: absolute;
+    right: 125px;
+    size: 7px;
+}
+
+.switch{
+    background: url(/resources/images/switch.png);
+    background-size: 100% 100%;
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;    
+    border: none;
+    outline:none;
+    text-decoration: none;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.iconoRanking{
+    background: url(/resources/images/ranking.png);
+    background-size: 100% 100%;
+    width: 75px;
+    height: 75px;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;    
+    border: none;
+    outline:none;
+    text-decoration: none;
+    margin-left: 100px;
+}
+
+.iconoEstadisticas{
+    background: url(/resources/images/estadisticas.png);
+    background-size: 100% 100%;
+    width: 65px;
+    height: 65px;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;    
+    border: none;
+    outline:none;
+    text-decoration: none;
+    margin-left: 70px;
+}
+
+.iconoMoneda{
+    background: url(/resources/images/moneda.png);
+    background-size: 100% 100%;
+    width: 75px;
+    height: 75px;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;    
+    border: none;
+    outline:none;
+    text-decoration: none;
+}
+
+.iconoPartidas{
+    background: url(/resources/images/folderGames.png);
+    background-size: 100% 100%;
+    width: 65px;
+    height: 65px;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;    
+    border: none;
+    outline:none;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    font-family: LithosPro;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #d395438c;
+    max-width: 300px;
+    font-family: LithosPro;
+    max-height: 60px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropbtn {
+    position: relative;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-family: LithosPro;
+}
+
+.dropdown-content a {
+    font-family: LithosPro;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #cab91d85}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.divContainerLogros{
+    text-align: center;
+    align-items: center;
+    background-position: center;
+    justify-content: center;
+    display: grid;   
+    grid-template-columns: 270px 270px 270px;
+}
+
+/* LOGROS */
+
+.Logrofalse{
+    text-align: center;
+    align-items: center;
+    background-position: center;
+    justify-content: center;
+    content: url(/resources/images/logroNoDesbloqueado.png);
+}
+
+.Logrotrue{
+    text-align: center;
+    align-items: center;
+    background-position: center;
+    justify-content: center;
+    content: url("/resources/images/moneda.png");
+}
+
+/* OBJECTIVOS IN-GAME*/
+
+.objectives{
+    width: 800px;
+}
+.BritanniavsGermania{
+    background: url(/resources/images/objetivos/BritanniavsGermania.png);
+    background-size: 100% 100%;
+    height: 130px;
+    width: 200px;
+
+}
+
+.GalliavsBritania{
+    background: url(/resources/images/objetivos/GalliavsBritania.png);
+    background-size: 100% 100%;
+    height: 130px;
+    width: 200px;
+
+}
+
+.GalliavsGermania{
+    background: url(/resources/images/objetivos/GalliavsGermania.png);
+    background-size: 100% 100%;
+    height: 130px;
+    width: 200px;
+
+}
+
+.HispaniavsBritannia{
+    background: url(/resources/images/objetivos/HispaniavsBritannia.png);
+    background-size: 100% 100%;
+    height: 130px;
+    width: 200px;
+
+}
+
+.HispaniavsGallia{
+    background: url(/resources/images/objetivos/HispaniavsGallia.png);
+    background-size: 100% 100%;
+    height: 130px;
+    width: 200px;
+
+}
+
+.HispaniavsGermania{
+    background: url(/resources/images/objetivos/HispaniavsGermania.png);
+    background-size: 100% 100%;
+    height: 130px;
+    width: 200px;
+
+}
+
+.CENTER{
+    background: url(/resources/images/objetivos/CENTER.png);
+    background-size: 100% 100%;
+    height: 130px;
+    width: 200px;
+
+}
+
+.LEFT{
+    background: url(/resources/images/objetivos/LEFT.png);
+    background-size: 100% 100%;
+    height: 130px;
+    width: 200px;
+
+}
+
+.RIGHT{
+    background: url(/resources/images/objetivos/RIGHT.png);
+    background-size: 100% 100%;
+    height: 130px;
+    width: 200px;
+
+}
+
+.LEFTCENTER{
+    background: url(/resources/images/objetivos/LEFTCENTER.png);
+    background-size: 100% 100%;
+    height: 130px;
+    width: 200px;
+
+}
+
+.LEFTRIGHT{
+    background: url(/resources/images/objetivos/LEFTRIGHT.png);
+    background-size: 100% 100%;
+    height: 130px;
+    width: 200px;
+}
+
+.RIGHTCENTER{
+    background: url(/resources/images/objetivos/RIGHTCENTER.png);
+    background-size: 100% 100%;
+    height: 130px;
+    width: 200px;
+
+}
+
+.MIDDLE{
+    background: url(/resources/images/objetivos/CENTER.png);
+    background-size: 100% 100%;
+    height: 130px;
+    width: 200px;
+
+}
+
+.objetivo1{
+    position: fixed;
+    left: 20px;
+    bottom: 30px;
+}
+
+.objetivo2{
+    position: fixed;
+    left: 230px;
+    bottom: 30px;
+}
+
+.monedas{
+    position: absolute;
+    left: 230px;
+    bottom: 0px;
+}
+
+#moneda{
+    background-image: url(/resources/images/carasDado/caraOro.png);
+    background-size: 100% 100%;
+    height: 40px;
+    width: 40px;
+}
+
+#containerPadreMonedas{
+    position: fixed;
+    right: 30px;
+    bottom: 20px;
+}
+
+#containerMonedas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #a30003;
+    border-style: groove;
+    height: 100%;
+    width: 100%;
+  }
+
+.textoInGame{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: LithosPro;
+    top: 0px;
+}
+
+.abajo{
+    left: 30px;
+    position: relative;
+    bottom: 120px;
+}
+
+img.curia{
+    height: 80px!important;
+    position:absolute!important;
+    z-index: 100!important;
+    
+}
+img.cityToken{
+    height: 80px!important;
+    position:absolute!important;
+    z-index: 100!important;
+    
+}
+#curiaLeft1{
+    top:440px;
+    right:127px;
+}
+#curiaLeft2{
+    top:406px;
+    right:127px;
+}
+
+#curiaLeft3{
+    top:372px;
+    right:127px;
+}
+#curiaMid1{
+    top:440px;
+    right:70px;
+}
+#curiaMid2{
+    top:406px;
+    right:70px;
+}
+
+#curiaMid3{
+    top:372px;
+    right:70px;
+}
+
+#curiaRight1{
+    top:440px;
+    right:13px;
+}
+#curiaRight2{
+    top:406px;
+    right:13px;
+}
+
+#curiaRight3{
+    top:372px;
+    right:13px;
+}
+
+/* LISTOFGAMES.JSP*/
+
+.tablaTitulo{
+    color: black;
+    font-size: 25px;
+    font-family: LithosPro;
+    text-shadow: 1px 1px 0px white, 1px -1px 0px white, -1px -1px 0px white, -1px 1px 0px white;
+    text-align: center;
+    align-items: center;
+    background-position: center; 
+    justify-content:center;
+}
+
+.tablaContenido{
+    color: black;
+    font-size: 15px;
+    font-family: LithosPro;
+    border: 1px solid black;
+    text-align: center;
+    align-items: center;
+    background-position: center; 
+    justify-content:center;
+}
+
+#gridWelcome {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 20px;
+    margin-left: 34vw;
+  }
+  
+#gridItemWelcome {
+    background-image: url('/resources/images/marcoAdmin.png'); 
+    background-size: 140px 70px;
+    background-repeat: no-repeat;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+    background-position: center; 
+    justify-content:center;
+    width: 140px;
+    color: white;
+    font-size: 20px;
+    font-family: LithosPro;
+    cursor: pointer;
+  }
